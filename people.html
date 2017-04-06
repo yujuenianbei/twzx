@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="tephone=no,email=no,date=no,address=no">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>企信云 - 公司成员</title>
+    <link rel='stylesheet' href='css/ico/style.css'>
+    <link rel='stylesheet' href='css/pub.css'>
+    <style>
+        #body{overflow-x:hidden;  }
+        #body>[cont]{padding:50px 0;  }
+
+        #box1{position:relative;  padding:20px 0;  margin-bottom:150px;  }
+        #box1 [img]{overflow:hidden;  height:600px;  position:relative;  }
+        #box1 [img]>img{position:absolute;  top:-10000px;  bottom:-10000px;  left:-10000px;  right:-10000px;  margin:auto;  }
+        #box1 [text]{position:absolute;  bottom:0;  left:0;  color:#565656;  text-shadow:-1px -1px 3px rgba(255,255,255,0.5);  }
+        #box1 h1{font:700 40px/1 '';  }
+        #box1 h1+span{display:inline-block;  font:40px/68px '';  border:2px solid;  border-left:none;  border-right:none;  }
+        #box1 [card]{margin-top:150px;  background:#38C5C3;  color:#fff;  padding:40px 40px 35px;  text-shadow:none;  display:inline-block;  }
+        #box1 h2{font:700 30px/1 '';  margin-bottom:27px;  }
+        #box1 h2+span{font:24px/1 '';  }
+
+        #box2>[lg6]{float:right;  }
+        #box2{padding:20px 0;  margin-bottom:150px;  }
+        #box2 [text]{color:#565656;  padding:90px 30px 0 0;  font:14px/2 '';  }
+        #box2 h4{color:#38C5C3;  font:20px/1 '';  margin-bottom:20px;  }
+        #box2 [img]{position:relative;  width:70%;  left:30%;  padding-top:50%;  border:3px solid #38C5C3;  }
+        #box2 img{position:absolute;  bottom:18px;  right:24px;  }
+        #box2 [lg6][ovh]{padding-top:10%;  }
+        
+        #box3{padding:20px 0;  margin-bottom:150px;  }
+        #box3 [text]{color:#565656;  padding:90px 0 0 30px;  font:14px/2 '';  }
+        #box3 h4{color:#38C5C3;  font:20px/1 '';  margin-bottom:20px;  }
+        #box3 [img]{position:relative;  width:70%;  padding-top:50%;  border:3px solid #38C5C3;  }
+        #box3 li{position:relative;  padding-left:20px;  }
+        #box3 li:before{content:'';  position:absolute;  height:100%;  left:10px;  top:14px;  width:1px;  background:#38C5C3;  }
+        #box3 li:last-child:before{display:none;  }
+        #box3 li:after{content:'';  position:absolute;  height:9px;  width:9px;  left:6px;  top:10px;    border:2px solid #fff;  border-radius:50%;  background:#38C5C3;  }
+        #box3 img{position:absolute;  bottom:18px;  left:24px;  }
+        #box3 [lg6][ovh]{padding-top:10%;  }
+        
+        #box4{padding-right:3%;  margin-bottom:150px;  }
+        #box4 li{padding-right:10px;  }
+        #box4 li>div{height:580px;  position:relative;  transition:0.3s;  }
+        #box4 li>div>img{position:absolute;  top:-10000px;  left:-10000px;  right:-10000px;  bottom:-10000px;  margin:auto;  }
+        #box4 li>div:after{content:'';  position:absolute;  top:0;  bottom:0;  left:0;  right:0;  background:rgba(0,0,0,0.5);  transition:0.3s;  }
+        #box4 li>div:hover{-webkit-transform:scale(1.1);  transform:scale(1.05);  z-index:1;  }
+        #box4 li>div:hover:after{background:rgba(0,0,0,0);  }
+
+        #box5{margin-bottom:200px;  }
+        #box5 h4{color:#38C5C3;  font:20px/1 '';  margin-bottom:20px;  }
+        #box5 ul{margin:0 -20px;  font:14px/2 '';  color:#565656;  }
+        #box5 li{padding:0 20px 15px;  }
+        
+        #box6{margin-bottom:200px;  overflow:hidden;  }
+        #box6 b{font:700 60px/1 '';  color:#565656;  display:block;  }
+        #box6 span{display:inline-block;  margin:30px 0;  color:#38C5C3;  font:24px/1 '';  padding:0 15px;  position:relative;  }
+        #box6 span:before,
+        #box6 span:after{content:'';  position:absolute;  right:100%;  top:0;  bottom:0;  height:1px;  margin:auto;  width:90px;  background:#38C5C3;  }
+        #box6 span:after{left:100%;  }
+        #box6 a{text-align:center;  font:18px/50px '';  display:block;  width:220px;  margin:0 auto;  border-radius:25px;  color:#fff;  background:#D8271C;  }
+        #box6 a:hover{background:#38CFDD;  }
+        
+        
+        
+        #engineers{text-shadow:1px 1px 3px rgba(0,0,0,0.5);  padding-bottom:50px;  }
+        .engineer{position:relative;  padding-top:70%;  overflow:hidden;  }
+        .engineer>img{position:absolute;  top:0;  left:-10000px;  right:-10000px;  margin:auto;  min-width:100%;  }
+        .engineer:before{content:'';  position:absolute;  top:0;  bottom:0;  right:0;  left:0;  background:rgba(0,0,0,0);  z-index:1;  transition:0.2s;  }
+        .engineer:after{content:'';  position:absolute;  top:0;  bottom:0;  right:0;  left:0;  border:1px solid rgba(0,0,0,0);  transition:0.3s;  z-index:2;  }
+        .engineer>[text]{position:absolute;  left:20px;  right:40px;  bottom:30px;  z-index:3;  }
+        .engineer strong{font:700 24px/1.5 '';  color:#fff;  display:block;  padding-bottom:10px;  }
+        .engineer b{font:700 18px/1 '';  color:#fff;  display:block;  }
+        .engineer [hr]{width:30px;  height:3px;  background:#3ACECC;  display:block;  margin:15px 0;  }
+        .engineer [tags]{font:14px/1 '';  color:#F5FAFE;  }
+        .engineer [tags]>li{display:inline;  }
+        .engineer.on:before{background:rgba(53,239,237,0.5);  }
+        .engineer:hover:before{background:rgba(0,0,0,0.5);  }
+        .engineer:hover:after{margin:5px 15px;  border-color:#3BC6C4;  }
+        
+        
+        @media (max-width:1200px) {
+
+            #box1 [img]{height:450px;  }
+
+            #box2 [text],
+            #box3 [text]{padding-top:0;  }
+            
+            #box4 li>div{height:450px;  }
+            
+            #box5,
+            #box6{margin-bottom:150px;  }
+        }
+        
+        @media (max-width:1024px) {
+            #body>[cont]{padding:50px;  }
+            
+            #box1 h1{font-size:30px;    }
+            #box1 h1+span{font:30px/50px '';   }
+            #box1 [card]{padding:30px 30px 25px;  }
+
+            #box4 li>div{height:360px;  }
+        }
+        
+        @media (max-width:760px) {
+            #body>[cont]{padding:50px 15px;  }
+
+            #box1{margin-bottom:50px;  }
+            #box1 [img]{height:300px;  }
+            #box1 [text]{position:static;  float:left;  width:100%;  padding-top:20px;  }
+            #box1 [card]{text-align:center;  margin-top:20px;  width:100%;  }
+
+            #box2{margin-bottom:50px;  }
+            #box2 [img]{border:none;  position:static;  width:100%;  }
+            #box2 img{top:-1000px;  bottom:-1000px;  left:-1000px;  right:-1000px;  margin:auto;  }
+            #box2 [text],
+            #box3 [text]{padding:20px 0 0;  }
+            
+            #box3{margin-bottom:20px;  }
+            #box3 [img]{border:none;  position:static;  width:100%;  }
+            #box3 img{top:-1000px;  bottom:-1000px;  left:-1000px;  right:-1000px;  margin:auto;  }
+            
+            #box4,
+            #box5,
+            #box6{margin-bottom:50px;  }
+            
+            #box4{padding-right:0;  margin:0 -5px;  }
+            #box4 li{padding:0 5px;  }
+            #box4 li>div{height:auto;  padding-top:150%;  }
+            
+            #box5 ul{margin:0;  }
+            #box5 li{padding:0 0 15px;  }
+            
+            #box6 b{font-size:40px;  }
+            #box6 span{font-size:24px;  }
+        }
+        
+        
+        
+    </style>
+
+</head>
+
+<body click='closeHideNav()'>
+
+
+    <!--[if lte IE 8]>
+        <style>body *{display:none;  }</style>
+        <div id='ie8'>
+            <div><img src='img/ie8.jpg' style='margin:0 auto;'>您当前的浏览器版本太低</div>
+            <p>请<a title='点击这里升级浏览器！' href='http://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads?spm=875.7931836/A.a2226mw.1.HNpkXi'>升级浏览器</a>或者<a title='点击下载最新谷歌浏览器！' href='http://rj.baidu.com/soft/detail/14744.html?ald'>更换其他浏览器</a><br>继续进行浏览！</p>
+        </div>
+    <![endif]-->
+    <header>
+        <a href='index.html' id='logo'>
+            <img src='img/logo.png'>
+            <img src='img/logo2.png' fff>
+        </a>
+        <a click='toggleNav()' class='ico-menu'></a>
+        <nav>
+            <a href='index.html'>首页</a>
+            <a href='index.html?scrollto=5'>成功案例</a>
+            <a href='joinUs.html'>人才招聘</a>
+            <a href='innovation.html'>创新技术</a>
+            <a href='qualification.html'>资质证书</a>
+            <a href='about.html' class='on'>关于我们</a>
+            <a open>
+                <b>旗下产品</b>
+                <span class='ico-ico-81'></span>
+                <ul hideNav>
+                    <li href='http://skynetcredit.qixinyun.com/'>天网征信</li>
+                    <li click='open404();def()'>天时产销</li>
+                    <li click='open404();def()'>天道融资</li>
+                    <li click='open404();def()'>天才培训</li>
+                </ul>
+            </a>
+        </nav>
+    </header>
+
+    <div id='body'>
+        <div cont>
+            <div id='box1' clear>
+                <div img lg10 lgo2 xx12 xxo0><img src='image/content_5571413247709816.jpg'></div>
+                <div text>
+                    <h1>CEO</h1>
+                    <span>企信通征信有限公司CEO</span>
+                    <br>
+                    <div card>
+                        <h2>傅盛</h2>
+                        <span>企信通征信有限公司CEO</span>
+                    </div>
+                </div>
+            </div>
+            <div id='box2' clear>
+                <div lg6 xx12 ovh>
+                    <div img><img src='image/085e5d76525b4628967b4ae542a52b56.jpg'></div>
+                </div>
+                <div lg6 xx12 claer>
+                    <div text lg9 lgo3 sm12 smo0>
+                        <h4>学习经历    Learning experience</h4>
+                        <p>1995年，傅盛就读于山东工商学院（原山东省烟台市中国煤炭经济学院），在大学里，傅盛获得的学位并不是跟IT有关的工学，而是经济学，但这并不影响他因为自己对电脑的兴趣选择了偏软件类的信息管理与信息系统专业。在校期间，他创办电脑技术协会（简称CTA），该社团日后成长为省级优秀社团大学期间，尽管电脑并不普及，但傅盛对编程和网络进行了深入的研究，积累了许多计算机的知识。</p>
+                    </div>
+                </div>
+            </div>
+            <div id='box3' clear>
+                <div lg6 xx12 ovh>
+                    <div img><img src='image/IMG_0900.jpg'></div>
+                </div>
+                <div lg6 xx12 claer>
+                    <div text lg9 sm12>
+                        <h4>学习经历    Learning experience</h4>
+                        <ul>
+                            <li>2005年，时任360安全卫士团队的负责人。</li>
+                            <li>2008年，接受经纬中国的张颖的邀请，加盟经纬中国。</li>
+                            <li>2009年，正式出任可牛影像董事长兼CEO。</li>
+                            <li>2010年，出任新公司金山网络公司CEO。</li>
+                            <li>2014年，出任猎豹移动公司CEO。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+        <div id='box4' clear>
+            <li lg2 xx3>
+                <div ovh>
+                    <img src='image/u=110065589,811833165&fm=214&gp=0.jpg'>
+                </div>
+            </li>
+            <li lg2 xx3>
+                <div ovh>
+                    <img src='image/1432781095163900.jpg'>
+                </div>
+            </li>
+            <li lg6 xx3>
+                <div ovh>
+                    <img src='image/f36c94cf946e4b4bb8ae923a0c1e131f.jpg'>
+                </div>
+            </li>
+            <li lg2 xx3>
+                <div ovh>
+                    <img src='image/news76391.jpg'>
+                </div>
+            </li>
+        </div>
+
+        <div cont>
+            <div id='box5' clear>
+                <h4>所获荣誉   Honors</h4>
+                <ul clear>
+                    <li lg6 sm12>2011年12月7日，由《IT时代周刊》、IT商业新闻网联合主办的“第七届CEO年会”在北京隆重举行，金山网络CEO傅盛在年会中荣膺“2011 IT新锐人物奖”。</li>
+                    <li lg6 sm12>2012年12月，《环球企业家》环球创新盛典在北京嘉里中心举办，金山网络CEO傅盛受邀参与盛典，并被授予“2012年度创新领袖”奖项，同时，金山网络旗下猎豹浏览器获得“2012年度最佳创新产品奖”</li>
+                    <li lg6 sm12>2016年3月16日，傅盛当选2016年“全球青年领袖”</li>
+                </ul>
+            </div>
+            
+            <div id='box6' tac>
+                <b>加入我们</b>
+                <span>JION OUR TEAM</span>
+                <a>人才招聘</a>
+            </div>
+        </div>
+
+        <ul id='engineers' clear>
+            <li lg3 sm6 xx12>
+                <div class='engineer on'>
+                    <img src='image/img001.jpg'>
+                    <div text>
+                        <strong>Founder & CEO</strong>
+                        <b>王闻之</b>
+                        <span hr></span>
+                        <ul tags>
+                            <li>总经理</li>
+                            <li>总经办</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li lg3 sm6 xx12>
+                <div class='engineer'>
+                    <img src='image/img001.jpg'>
+                    <div text>
+                        <strong>Founder & CEO</strong>
+                        <b>王闻之</b>
+                        <span hr></span>
+                        <ul tags>
+                            <li>总经理</li>
+                            <li>总经办</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li lg3 sm6 xx12>
+                <div class='engineer'>
+                    <img src='image/img001.jpg'>
+                    <div text>
+                        <strong>Founder & CEO</strong>
+                        <b>王闻之</b>
+                        <span hr></span>
+                        <ul tags>
+                            <li>总经理</li>
+                            <li>总经办</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li lg3 sm6 xx12>
+                <div class='engineer'>
+                    <img src='image/img001.jpg'>
+                    <div text>
+                        <strong>Founder & CEO</strong>
+                        <b>王闻之</b>
+                        <span hr></span>
+                        <ul tags>
+                            <li>总经理</li>
+                            <li>总经办</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li lg3 sm6 xx12>
+                <div class='engineer'>
+                    <img src='image/img001.jpg'>
+                    <div text>
+                        <strong>Founder & CEO</strong>
+                        <b>王闻之</b>
+                        <span hr></span>
+                        <ul tags>
+                            <li>总经理</li>
+                            <li>总经办</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li lg3 sm6 xx12>
+                <div class='engineer'>
+                    <img src='image/img001.jpg'>
+                    <div text>
+                        <strong>Founder & CEO</strong>
+                        <b>王闻之</b>
+                        <span hr></span>
+                        <ul tags>
+                            <li>总经理</li>
+                            <li>总经办</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li lg3 sm6 xx12>
+                <div class='engineer'>
+                    <img src='image/img001.jpg'>
+                    <div text>
+                        <strong>Founder & CEO</strong>
+                        <b>王闻之</b>
+                        <span hr></span>
+                        <ul tags>
+                            <li>总经理</li>
+                            <li>总经办</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li lg3 sm6 xx12>
+                <div class='engineer'>
+                    <img src='image/img001.jpg'>
+                    <div text>
+                        <strong>Founder & CEO</strong>
+                        <b>王闻之</b>
+                        <span hr></span>
+                        <ul tags>
+                            <li>总经理</li>
+                            <li>总经办</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>© 2017 企信云 京ICP备11001652号-2</p>
+        <div cont clear>
+            <span fll cll>地址：北京市丰台区南四环西路总部基地188号-1区-8号楼三层</span>
+            <span flr clr xs12>http://www.qixinyun.com</span>
+            
+            <span fll cll>电话：010-69299001</span>
+            <span flr clr xs12>电话：010-69299001</span>
+        </div>
+    </footer>
+
+    <div id="lizi-bg"></div>
+
+    <script src='http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js'></script>
+    <script src='js/s.jquery.js'></script>
+    <script src='js/layer/layer.js'></script>
+    <script src='js/pub.js'></script>
+    <script>
+
+        if(document.body.clientWidth<=760){
+
+        }
+        else{
+            
+        }
+
+    </script>
+
+    <!-- 粒子效果 -->
+    <script src='js/lizi-bg-init.js'></script>
+</body>

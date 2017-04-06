@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="tephone=no,email=no,date=no,address=no">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>企信云 - 创新技术</title>
+    <link rel='stylesheet' href='css/ico/style.css'>
+    <link rel='stylesheet' href='css/pub.css'>
+    <style>
+        #banner{position:relative;  margin-top:10px;  padding-top:31.25%;  min-height:300px;  background:url(image/Innovation_bg.jpg) center/auto 100% no-repeat;  }
+        #banner>[text]{position:absolute;  top:0;  bottom:0;  left:0;  right:0;  color:#fff;  text-align:center;  padding:10% 5%;  }
+        #banner h1{font:100px/1 '';  margin-bottom:30px;  }
+        #banner p{font:14px/2 '';  }
+        
+        @media (max-width:1200px) {
+            #banner>[text]{padding:7%;  }
+            #banner h1{font-size:60px;  }
+        }
+        @media (max-width:1024px) {
+            #banner>[text]{padding:5%;  }
+            #banner h1{font-size:60px;  }
+        }
+        @media (max-width:768px) {
+            #banner>[text]{padding:20px;  }
+            #banner h1{font-size:30px;  }
+            #banner p{font:12px/2 '';  }
+        }
+        
+
+        #docker{text-align:center;  }
+        #docker>[cont]{padding:150px 20px 50px;  }
+        #docker [lg3]{background:url(img/01.png) center 0 no-repeat;  padding:180px 10px 50px;  font:16px/2 '';  color:#565656;  }
+        #docker [lg3]>b{display:block;  margin-bottom:10px;  font:700 24px/1 '';  }
+        #docker [lg3]:nth-child(2){background-image:url(img/02.png);  }
+        #docker [lg3]:nth-child(3){background-image:url(img/03.png);  }
+        #docker [lg3]:nth-child(4){background-image:url(img/04.png);  }
+        @media (max-width:554px){
+            #docker>[cont]{padding:30px 0 0;  }
+            #docker [lg3]{padding-bottom:30px;  padding-top:160px;  font-size:14px;  }
+        }
+
+        #sql{text-align:center;  color:#565656;  background:#FBFBFB url(image/Innovation_bg2.jpg) center 100%/100% auto no-repeat;  padding:80px 0 180px;  }
+        #sql>[cont]{padding:110px 80px;  background:#fff;  color:#565656;  }
+        #sql [lg6]{padding:0 35px;  }
+        #sql [lg6] img{margin:50px auto 0;  max-width:100%;  }
+        #sql [text]{border-left:1px solid #F9F9F9;  text-align:left;  }
+        #sql [text]>h2{color:#36C2C0;  font:20px/1 '微软雅黑';  margin-bottom:20px;  }
+        #sql [text]>h2~h2{margin-top:50px;  }
+        #sql [text]>p{font:14px/2 '微软雅黑';  }
+        #sql [lg12]{margin-top:130px;  border-top:1px solid #EEEEEE;  }
+        #sql [lg12]>h2{font:50px/1 '微软雅黑';  margin:60px 0 20px;  color:#36C2C0;  }
+        #sql [lg12]>p{font:16px/24px '微软雅黑';  padding:50px 20px 0;  }
+        #sql [lg12] img{margin:0 auto;  }
+
+        #sql [sql_1]{color:#36C2C0;  font:16px/1 '微软雅黑';  }
+        #sql [sql_1]>div{width:290px;  height:240px;  position:relative;  margin:0 auto;  }
+        #sql [sql_1] span{position:absolute;  }
+        #sql [sql_1] span:nth-child(1){top:45px;  left:0;  right:0;  text-align:center;  margin:auto;  }
+        #sql [sql_1] span:nth-child(2){top:133px;  left:15px;  }
+        #sql [sql_1] span:nth-child(3){top:133px;  right:19px;  }
+        #sql [sql_1] b{position:absolute;  top:140px;  left:0;  right:0;  text-align:center;  font:24px/1 '微软雅黑';  }
+        
+        #sql [sql_2]>img{margin-top:120px;  position:relative;  left:20px;  }
+    
+        #sql [sql_3]>img{margin-top:25px;  }
+        #sql [sql_3]>span{display:block;  margin-top:20px;  color:#36C2C0;  }
+        @media (max-width:1024px) and (min-width:769px){
+            #sql>[cont]{padding:50px 40px;  }
+            #sql [lg12]>h2{font-size:40px;  margin-bottom:0;  }
+            #sql [sql_1]{font-size:14px;  }
+            #sql [sql_1] span:nth-child(1){top:38px;  }
+            #sql [sql_1] span:nth-child(2){top:110px;  left:10px;  }
+            #sql [sql_1] span:nth-child(3){top:110px;  right:13px;  }
+            #sql [sql_1] b{font-size:20px;  top:123px;  }
+            #sql [sql_1]>div{width:240px;  margin-top:30px;  }
+            #sql [sql_1] img{width:100%;  }
+            #sql [sql_2]>img{width:100px;  }
+            #sql [sql_3]>img{width:120px;  margin-top:50px;  }
+        }
+        @media (max-width:768px){
+            #sql>[cont]{padding:40px;  }
+            #sql [lg6] img{margin:0 auto 50px;  }
+            
+            #sql [lg12]{margin-top:50px;  }
+            #sql [lg12]>h2{margin:40px 0 80px;  }
+            #sql [sql_2]>img{left:0;  margin:90px auto 40px;  -webkit-transform:rotateZ(90deg) scale(0.7);  -ms-transform:rotateZ(90deg) scale(0.7);  transform:rotateZ(90deg) scale(0.7);  }
+            #sql [sql_1]>div{-webkit-transform:scale(1.2);  -ms-transform:scale(1.2);  transform:scale(1.2);  }
+            
+        }
+        @media (max-width:400px){
+            #sql>[cont]{padding:30px 20px;  }
+            #sql [lg12]>h2{margin-bottom:35px;  }
+            #sql [sql_1]>div{-webkit-transform:scale(1);  -ms-transform:scale(1);  transform:scale(1);  }
+            #sql [sql_2]>img{margin:60px auto 30px;  }
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        footer{background:#232323;  color:#828282;  }
+
+    </style>
+
+</head>
+
+<body click='closeHideNav()'>
+
+
+    <!--[if lte IE 8]>
+        <style>body *{display:none;  }</style>
+        <div id='ie8'>
+            <div><img src='img/ie8.jpg' style='margin:0 auto;'>您当前的浏览器版本太低</div>
+            <p>请<a title='点击这里升级浏览器！' href='http://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads?spm=875.7931836/A.a2226mw.1.HNpkXi'>升级浏览器</a>或者<a title='点击下载最新谷歌浏览器！' href='http://rj.baidu.com/soft/detail/14744.html?ald'>更换其他浏览器</a><br>继续进行浏览！</p>
+        </div>
+    <![endif]-->
+    <header>
+        <a href='index.html' id='logo'>
+            <img src='img/logo.png'>
+            <img src='img/logo2.png' fff>
+        </a>
+        <a click='toggleNav()' class='ico-menu'></a>
+        <nav>
+            <a href='index.html'>首页</a>
+            <a href='index.html?scrollto=5'>成功案例</a>
+            <a href='joinUs.html'>人才招聘</a>
+            <a href='innovation.html' class='on'>创新技术</a>
+            <a href='qualification.html'>资质证书</a>
+            <a href='about.html'>关于我们</a>
+            <a open>
+                <b>旗下产品</b>
+                <span class='ico-ico-81'></span>
+                <ul hideNav>
+                    <li href='http://skynetcredit.qixinyun.com/'>天网征信</li>
+                    <li click='open404();def()'>天时产销</li>
+                    <li click='open404();def()'>天道融资</li>
+                    <li click='open404();def()'>天才培训</li>
+                </ul>
+            </a>
+        </nav>
+    </header>
+
+    <div id='body'>
+        <div id='banner'>
+            <div text>
+                <h1>创新 · 科技</h1>
+                <p>我们利用大数据、云计算、<br lghd xssh>微服务等前沿的信息技术来打造天网征信平台，<br lghd mdsh>让用户在征信的同时能体验到高科技的<br lghd xssh>信息技术给征信业务带来的改革。<br>天网征信开启了中国征信业务在信息化领域的一扇门，<br lghd mdsh>我们整合了政府，银行，以及民间第三方的数据，<br lghd xssh>打破信息壁垒，实现数据共享，为企业绘制一副完整的征信数据图</p>
+            </div>
+        </div>
+
+        <div id='docker'>
+            <div cont clear>
+                <div lg3 md6 xx12>
+                    <b>节约时间</b>
+                    <p>快速部署和启动<br>docker容器启动是秒级</p>
+                </div>
+                <div lg3 md6 xx12>
+                    <b>节约成本</b>
+                    <p>docker容器<br>可以减少到MB级</p>
+                </div>
+                <div lg3 md6 xx12>
+                    <b>持续集成</b>
+                    <p>通过与代码进行关联<br>使持续集成非常方便</p>
+                </div>
+                <div lg3 md6 xx12>
+                    <b>微服务</b>
+                    <p>同时采用微服务的架构体系<br>通过服务编排，更好的松耦合</p>
+                </div>
+            </div>
+        </div>
+
+        <div id='sql'>
+            <div cont clear>
+                <div lg6 md12>
+                    <img src='img/sql_1.png'>
+                </div>
+                <div lg6 md12 text>
+                    <h2>标注化应用发布</h2>
+                    <p>企信云使用docker容器化机制打包运行环境和可执行程序到可移植的容器中发布到任何流行的 Linux 机器上实现标准化应用发布，同时也实现虚拟化</p>
+                    <h2>沙箱机制</h2>
+                    <p>容器是完全使用沙箱机制相互之间不会有任何接口</p>
+                </div>
+                <div lg12>
+                    <h2>大数据</h2>
+                    <div clear>
+                        <div lg5 md12 sql_1>
+                            <div>
+                                <span>银行数据</span>
+                                <span>政府数据</span>
+                                <span>民间数据</span>
+                                <b>企信云</b>
+                                <img src='img/sql_2.png'>
+                            </div>
+                        </div>
+                        <div lg2 md12 sql_2><img src='img/sql_3.png'></div>
+                        <div lg5 md12 sql_3>
+                            <img src='img/sql_4.png'>
+                            <span>企信云数据模型</span>
+                        </div>
+                    </div>
+                    <p>大数据给中国传统的征信领域带来颠覆性的意义。企信云以准PPP的形式，将政府数据、银行数据、以及民间数据进行整合，并且进行深层次、多维度的大数据分析和挖掘形成企信云独有的信用数据模型从而更加全面更加合理的反映信用主体的真实信息，同时打破各个管辖部门或行业领域的信息壁垒问题，实现信用数据的共享和应用</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2017 企信云 京ICP备11001652号-2</p>
+        <div cont clear>
+            <span fll cll>地址：北京市丰台区南四环西路总部基地188号-1区-8号楼三层</span>
+            <span flr clr xs12>http://www.qixinyun.com</span>
+            
+            <span fll cll>电话：010-69299001</span>
+            <span flr clr xs12>电话：010-69299001</span>
+        </div>
+    </footer>
+
+    <div id="lizi-bg"></div>
+
+    <script src='http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js'></script>
+    <script src='js/s.jquery.js'></script>
+    <script src='js/layer/layer.js'></script>
+    <script src='js/pub.js'></script>
+    <script>
+
+
+        if(document.body.clientWidth<=760){
+
+        }
+        else{
+            
+        }
+
+
+    </script>
+
+</body>
+</html>

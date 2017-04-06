@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="tephone=no,email=no,date=no,address=no">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>企信云</title>
+    <link rel='stylesheet' href='css/ico/style.css'>
+    <link rel='stylesheet' href='css/pub.css'>
+    <link rel='stylesheet' href='css/index.css'>
+<style>
+    {}
+</style>
+</head>
+
+<body>
+
+    <!--[if lte IE 8]>
+        <style>body *{display:none;  }</style>
+        <div id='ie8'>
+            <div><img src='img/ie8.jpg' style='margin:0 auto;'>您当前的浏览器版本太低</div>
+            <p>请<a title='点击这里升级浏览器！' href='http://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads?spm=875.7931836/A.a2226mw.1.HNpkXi'>升级浏览器</a>或者<a title='点击下载最新谷歌浏览器！' href='http://rj.baidu.com/soft/detail/14744.html?ald'>更换其他浏览器</a><br>继续进行浏览！</p>
+        </div>
+    <![endif]-->
+
+    <nav class='pageNav' style='height:340px;' temp>
+        <a class='ico-51' click='bodyScrollTo([[$index]])'></a>
+    </nav>
+
+    <header>
+        <a href='index.html' id='logo'>
+            <img src='img/logo.png'>
+            <img src='img/logo2.png' fff>
+        </a>
+        <a click='toggleNav()' class='ico-menu'></a>
+        <nav>
+            <a click='bodyScrollTo(0)' class='on'>首页</a>
+            <a click='bodyScrollTo(5)'>成功案例</a>
+            <a href='joinUs.html'>人才招聘</a>
+            <a href='innovation.html'>创新技术</a>
+            <a href='qualification.html'>资质证书</a>
+            <a href='about.html'>关于我们</a>
+            <a open>
+                <b>旗下产品</b>
+                <span class='ico-ico-81'></span>
+                <ul hideNav>
+                    <li click='bodyScrollTo(1)'>天网征信</li>
+                    <li click='bodyScrollTo(2)'>天时产销</li>
+                    <li click='bodyScrollTo(3)'>天道融资</li>
+                    <li click='bodyScrollTo(4)'>天才培训</li>
+                </ul>
+            </a>
+        </nav>
+    </header>
+
+
+    <div class="pages" slidstart='moveStart(1)' slidmove='move(2)' slidend='moveEnd'>
+        <div>
+            <div class='page page1'>
+                <div class='cont'>
+                    <p blue>Enterprise Information Cloud</p>
+                    <h1>企信云综合大数据平台</h1>
+                    <p>Social credit and financial services integration platform</p>
+                </div>
+            </div>
+            <div class='page page4 page3'>
+                <div class='cont'>
+                    <h2>天网征信</h2>
+                    <span>Skynet Credit</span>
+                    <p>天道酬勤，信守不渝</p>
+                    <p>天网征信以专业征信机构为背景，
+                    以大数据技术为基础</p>
+                    <p>为企业提供全方位征信服务</p>
+                    <a href='http://skynetcredit.qixinyun.com/'>进入天网征信</a>
+                </div>
+            </div>
+            <!-- 
+            <div class='page page3'>
+                <div class='cont'>
+                    <h2>天网征信</h2>
+                    <span blue>Skynet Credit</span>
+                    <p>天道酬勤，信守不渝</p>
+                    <p>天网征信以专业征信机构为背景</p>
+                    <p>以大数据技术为基础</p>
+                    <p>为企业提供全方位征信服务</p>
+                    <a blue>进入天网征信</a>
+                </div>
+                <div img>
+                    <img src='image/page3-img.png'>
+                </div>
+            </div> -->
+            <div class='page page4'>
+                <div class='cont'>
+                    <h2>天时产销</h2>
+                    <span>Production And Marketing</span>
+                    <p>天时产销根据天网征信企业大数据进行智能匹配，让企业之间的所产与所销产生关联。<br>平台为企业提供宣传推广、担保交易、信用预警等服务，为中小型企业创造零风险交易平台。</p>
+                    <a click='open404();def()'>进入天时产销</a>
+                </div>
+            </div>
+            <div class='page page4 page5'>
+                <div class='cont'>
+                    <h2>天道融资</h2>
+                    <span>Financial Credit</span>
+                    <p>以天网征信大数据为蓝本，
+                    为中小企业解决资金的燃眉之急，</p>
+                    <p>政府扶持，银行对接，天道融贷为企业
+                    快速量身定做低成本的资金方案，让融</p>
+                    <p>资难，贷款难的中小企业一路畅通</p>
+                    <a click='open404();def()'>进入天道融资</a>
+                </div>
+            </div>
+            <!-- 
+            <div class='page page5 page3'>
+                <div class='cont'>
+                    <h2>天道融资</h2>
+                    <span blue>Financial Credit</span>
+                    <p>以天网征信大数据为蓝本</p>
+                    <p>为中小企业解决资金的燃眉之急</p>
+                    <p>政府扶持，银行对接，天道融贷为企业</p>
+                    <p>快速量身定做低成本的资金方案，让融</p>
+                    <p>资难，贷款难的中小企业一路畅通</p>
+                    <a blue>进入天道融资</a>
+                </div>
+                <div img>
+                    <img src='image/page5-img.png'>
+                </div>
+            </div> -->
+            <div class='page page6 page4'>
+                <div class='cont'>
+                    <h2>天才培训</h2>
+                    <span>Talent Training</span>
+                    <p>为中小企业提供线上线下的培训服务，提高企业员工的综合素质<br>提升企业在行业的综合竞争力</p>
+                    <a click='open404();def()'>进入天才培训</a>
+                </div>
+            </div>
+            
+            <div class='page page4 page2'>
+                <div class='cont'>
+                    <h2>政府项目</h2>
+                    <span blue>Government Project Experience</span>
+                    <p>我们和政府形成一个准PPP的模式。</p>
+                    <p>先进的软件开发技术，是公共信用信息平台的开发的有力保障。</p>
+                    <p>专业的征信机构背景，在项目落地后进行平台的运营和维护服务。</p>
+                    <p>专业+技术+服务的模式，为客户提供一体化的省心、省力、又省钱的合作。</p>
+
+                    <div cont clear ovh id='moveBox' show='5' slide="time:0,infinite:false">
+                        <ul>
+                            <li>
+                                <div img><img src='img/index-1.png'></div>
+                                <span>北京市森林公安局视频监控系统</span>
+                            </li>
+                            <li>
+                                <div img><img src='img/index-2.png'></div>
+                                <span>综合信息管理平台</span>
+                            </li>
+                            <li>
+                                <div img><img src='img/index-3.png'></div>
+                                <span>北京市国家公务员电子政务考试平台</span>
+                            </li>
+                            <li>
+                                <div img><img src='img/index-4.png'></div>
+                                <span>北京市公安局大兴分局110综合报警平台</span>
+                            </li>
+                            <li>
+                                <div img><img src='img/index-5.png'></div>
+                                <span>政府信用信息公示平台</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div tac id='moveBoxNav' temp>
+                        <a click='slideTo([[$index]])'></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class='page page7 page2'>
+                <div class='cont'>
+                    <h2>从企信云开始您的企业数据统计</h2>
+                    <span></span>
+                    <p>和千万企业用户一起，从<a blue>天网征信</a>开始</p>
+                    <a click='open404();def()' blue>立即注册体验</a>
+                
+                    <footer id='foot'>
+                        <p>© 2017 企信云 京ICP备11001652号-2</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <a click='bodyScrollNext();' class='ico-ico-81' title='下一页'></a>
+    </div>
+
+
+    <div id="lizi-bg"></div>
+
+    <script src='http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js'></script>
+    <script>
+        if(!window.jQuery){
+            document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')
+        }
+    </script>
+
+    <script src='js/s.jquery.js'></script>
+    <script src='js/layer/layer.js'></script>
+    <script src='js/pub.js'></script>
+
+    <!-- 滚动 -->
+    <script src='js/jquery.mousewheel.js'></script>
+    <script src='js/bodyScroll.js'></script>
+    
+    <!-- 轮播 -->
+    <script src='js/s.slide.js'></script>
+
+    <script>
+        
+        // 打开页面时直接跳转到某块
+        setTimeout(function(){
+            var scrollto=$.getUrlData().scrollto
+            if(scrollto){
+                eve.bodyScrollTo(null,scrollto)
+            }
+            if(scrollto=='5'){
+                $('header>nav>a').removeClass('on')
+                $('header>nav>a[click="bodyScrollTo(5)"]').addClass('on')
+            }
+        },0)
+        
+
+        // 页面滚动时的回调
+        function bodyScroll(i){
+
+            if(i==1 || i==2 || i==3 || i==4 || i==7){
+                $('header').addClass('fff')
+            }
+            else{
+                $('header').removeClass('fff')
+            }
+
+            if(i==6){
+                $('.pages>a').removeClass('ico-ico-81').addClass('ico-下拉')
+            }
+            else{
+                $('.pages>a').removeClass('ico-下拉').addClass('ico-ico-81')
+            }
+        }
+
+        // 小屏下可以折叠导航栏
+        eve.toggleNav=function (){
+            if(document.body.clientWidth>760)return
+                
+            if($(this).toggleClass('ico-menu').toggleClass('ico-80').hasClass('ico-menu')){
+                $('header>nav').hide()
+            }
+            else{
+                $('header>nav').show()
+            }
+        }
+        
+
+        // 滚动到某块
+        eve.slideTo=function (e,index){
+            slide.goto(index)
+        }
+
+        
+        // 政府项目的左右滑动
+        var moveBoxNav_temp=$.temp.init('#moveBoxNav')
+
+        // 滑动结束时
+        var slide=$.Slide('[slide]').onend(function (index){
+            $('#moveBoxNav>a').removeClass('on').eq(index).addClass('on')
+        })
+
+        // 默认每屏显示5个
+        slide.length=Math.ceil($('#moveBox li').length/5)
+        
+        // 小屏3个
+        if(document.body.clientWidth<=1024 && document.body.clientWidth>760){
+            $('#moveBox').attr('show',3)
+            slide.length=Math.ceil($('#moveBox li').length/3)
+        }
+
+        // 手机2个
+        if(document.body.clientWidth<=760){
+            $('#moveBox').attr('show',2)
+            slide.length=Math.ceil($('#moveBox li').length/2)
+        }
+        
+        // 初始化导航按钮
+        moveBoxNav_temp.reload(new Array(slide.length))
+
+        // 如果只有一屏，隐藏导航按钮
+        if(slide.length==1){
+            $('#moveBoxNav').hide()
+        }
+        // 给第一个按钮加上on
+        else{
+            $('#moveBoxNav>a:nth-child(1)').addClass('on')
+        }
+
+    </script>
+
+
+    <!-- 粒子效果 -->
+    <script src='js/lizi-bg-init.js'></script>
+
+
+</body>

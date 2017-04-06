@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="tephone=no,email=no,date=no,address=no">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>企信云 - 关于我们</title>
+    <link rel='stylesheet' href='css/ico/style.css'>
+    <link rel='stylesheet' href='css/pub.css'>
+    <style>
+
+        #body>[cont]{padding:0 30px;  }
+        #body>[cont]>span{display:block;  font:700 16px/1 '';  color:#3ACECC;  padding:200px 0 50px;  }
+        #body>[cont]>h1{font:700 50px/1 '';  color:#565656;  padding-bottom:50px;  }
+        #body>[cont]>p{font:18px/2 '';  }
+
+        #engineers{padding:150px 10px 50px;  margin:0 -30px;  text-align:left;  text-shadow:1px 1px 3px rgba(0,0,0,0.5);  }
+        #engineers>li{padding:0 10px 20px;  left:12.5%;  }
+        #engineers>li:nth-child(3n){margin-right:10%;  }
+        @media (max-width:1200px) {
+            #engineers>li{left:0;  }
+            #engineers>li:nth-child(3n){margin-right:0;}
+        }
+
+        .engineer{position:relative;  padding-top:140%;  background:#565656;  transition:0.2s;  overflow:hidden;  }
+        .engineer:hover{box-shadow:-7px 10px 0 #3ACECC;  }
+        .engineer>img{position:absolute;  top:30px;  left:-999px;  right:-999px;  margin:auto;  position:absolute;  }
+        .engineer>img[photo]{top:-999px;  bottom:-999px;  min-width:100%;  min-height:100%;  }
+        .engineer>[text]{position:absolute;  left:20px;  right:20px;  bottom:40px;  }
+        .engineer strong{font:700 24px/1.5 '';  color:#fff;  display:block;  padding-bottom:10px;  }
+        .engineer b{font:700 18px/1 '';  color:#fff;  display:block;  }
+        .engineer [hr]{width:30px;  height:3px;  background:#3ACECC;  display:block;  margin:15px 0;  }
+        .engineer [tags]{font:14px/1 '';  color:#F5FAFE;  }
+        .engineer [tags]>li{display:inline;  }
+    </style>
+
+</head>
+
+<body click='closeHideNav()'>
+
+
+    <!--[if lte IE 8]>
+        <style>body *{display:none;  }</style>
+        <div id='ie8'>
+            <div><img src='img/ie8.jpg' style='margin:0 auto;'>您当前的浏览器版本太低</div>
+            <p>请<a title='点击这里升级浏览器！' href='http://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads?spm=875.7931836/A.a2226mw.1.HNpkXi'>升级浏览器</a>或者<a title='点击下载最新谷歌浏览器！' href='http://rj.baidu.com/soft/detail/14744.html?ald'>更换其他浏览器</a><br>继续进行浏览！</p>
+        </div>
+    <![endif]-->
+
+    <header>
+        <a href='index.html' id='logo'>
+            <img src='img/logo.png'>
+            <img src='img/logo2.png' fff>
+        </a>
+        <a click='toggleNav()' class='ico-menu'></a>
+        <nav>
+            <a href='index.html'>首页</a>
+            <a href='index.html?scrollto=5'>成功案例</a>
+            <a href='joinUs.html'>人才招聘</a>
+            <a href='innovation.html'>创新技术</a>
+            <a href='qualification.html'>资质证书</a>
+            <a href='about.html' class='on'>关于我们</a>
+            <a open>
+                <b>旗下产品</b>
+                <span class='ico-ico-81'></span>
+                <ul hideNav>
+                    <li href='http://skynetcredit.qixinyun.com/'>天网征信</li>
+                    <li click='open404();def()'>天时产销</li>
+                    <li click='open404();def()'>天道融资</li>
+                    <li click='open404();def()'>天才培训</li>
+                </ul>
+            </a>
+        </nav>
+    </header>
+
+    <div id='body'>
+        <div cont tac>
+            <span>Enterprise Information Cloud</span>
+            <h1>关于我们</h1>
+            <p>企信云大数据平台是一个集天网征信、天时产销、天道融贷、天才培训为一体的综合大数据平台。产品基于天网征信企业大数据的分析和挖掘，为中小企业提供专业的征信服务；根据企业数据智能匹配，为平台企业宣传推广，形成平台内企业产销对接；利用正规专业的融贷渠道为中小企业提供快速低成本的资金方案；同时也提供线上线下的培训，打造具有综合素质和竞争力的企业。</p>
+
+
+            <ul id='engineers' clear>
+                <li lg3 md4 sm6 xx12>
+                    <div class='engineer'>
+                        <img src='image/HuangWeiDong.jpg' photo>
+                        <div text>
+                            <strong>Domain Experts</strong>
+                            <b>黄卫东</b>
+                            <span hr></span>
+                            <ul tags>
+                                <li>信用建设领域专家</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li lg3 md4 sm6 xx12>
+                    <div class='engineer'>
+                        <img src='img/photo1.png'>
+                        <div text>
+                            <strong>Domain Experts</strong>
+                            <b>吴志明</b>
+                            <span hr></span>
+                            <ul tags>
+                                <li>信用建设领域专家</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li lg3 md4 sm6 xx12>
+                    <div class='engineer'>
+                        <img src='image/MaYuXia.jpg' photo>
+                        <div text>
+                            <strong>Domain Experts</strong>
+                            <b>马玉遐</b>
+                            <span hr></span>
+                            <ul tags>
+                                <li>信用建设领域专家</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li lg3 md4 sm6 xx12>
+                    <div class='engineer'>
+                        <img src='img/photo1.png'>
+                        <div text>
+                            <strong>Domain Experts</strong>
+                            <b>刘凡晖</b>
+                            <span hr></span>
+                            <ul tags>
+                                <li>信用建设领域专家</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li lg3 md4 sm6 xx12>
+                    <div class='engineer'>
+                        <img src='img/photo2.png'>
+                        <div text>
+                            <strong>Domain Experts</strong>
+                            <b>唐添怡</b>
+                            <span hr></span>
+                            <ul tags>
+                                <li>信用建设领域专家</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li lg3 md4 sm6 xx12>
+                    <div class='engineer'>
+                        <img src='img/photo1.png'>
+                        <div text>
+                            <strong>Domain Experts</strong>
+                            <b>王升云</b>
+                            <span hr></span>
+                            <ul tags>
+                                <li>信用建设领域专家</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2017 企信云 京ICP备11001652号-2</p>
+        <div cont clear>
+            <span fll cll>地址：北京市丰台区南四环西路总部基地188号-1区-8号楼三层</span>
+            <span flr clr xs12>http://www.qixinyun.com</span>
+
+            <span fll cll>电话：010-69299001</span>
+            <span flr clr xs12>电话：010-69299001</span>
+        </div>
+    </footer>
+
+
+    <div id="lizi-bg"></div>
+
+    <script src='http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js'></script>
+    <script src='js/s.jquery.js'></script>
+    <script src='js/layer/layer.js'></script>
+    <script src='js/pub.js'></script>
+    <script>
+
+        if(document.body.clientWidth<=760){
+
+        }
+        else{
+
+        }
+
+
+    </script>
+
+    <!-- 粒子效果 -->
+    <script src='js/lizi-bg-init.js'></script>
+
+</body>
+</html>

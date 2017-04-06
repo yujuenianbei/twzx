@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="tephone=no,email=no,date=no,address=no">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>企信云 - 关于我们</title>
+    <link rel='stylesheet' href='css/ico/style.css'>
+    <link rel='stylesheet' href='css/pub.css'>
+    <style>
+
+        #body>[cont]{padding:0 30px;  }
+        #body>[cont]>span{display:block;  font:700 16px/1 '';  color:#3ACECC;  padding:200px 0 50px;  }
+        #body>[cont]>h1{font:700 50px/1 '';  color:#565656;  padding-bottom:50px;  }
+        #body>[cont]>p{font:18px/2 '';  }
+
+        #body>#banner{width:100%;margin-top: 20px;}
+        #body>#banner>img{width:100%;}
+        #body .title{text-align: left;  padding: 20px 35px;  margin-top: 30px;  border-bottom: 1px solid #ccc;  border-top: 1px solid #ccc;}
+        #body .title .on{  color: #35cecb;}
+        #engineers{margin-top: 20px}
+
+
+
+
+
+        @media (min-width: 1200px) {
+            #engineers>li{width:33.3%;padding: 0 50px;margin: 0 0 20px 0;height: 350px;cursor: pointer}
+            /*#engineers>li:first-child{padding: 0 10px 0 0}*/
+            /*#engineers>li:nth-child(3n){padding: 0 0 0 10px}*/
+            #engineers>li>.engineer{  width:100%;height:100%;}
+            #engineers>li>.engineer>img{ width:100%;height:100%;}
+            #engineers>li>.engineer>.name{display: none;width: calc(100% - 100px);height: 100%;position: absolute;top: 0;background: rgba(0, 0, 0, 0.59);}
+            #engineers>li>.engineer>.name>h3{margin-top: 60%;color: #fff;font-size: 16px;font-weight: 400;}
+            #engineers>li>.engineer:hover .name{display: block;transition: 1.3s}
+            .cmmi3{width:33.3%;margin-left:33.3%;text-align:center; margin-bottom: 30px;border: 1px solid #ccc;}
+            .cmmi3>img{width:100%;}
+            .img-div{  position: fixed;  z-index: 9999999;  top: 0;  bottom: 0;  left: 0;  right: 0;  background: rgba(0, 0, 0, 0.41);  display: none;  }
+            .img-div>.img{  width:500px;  height:700px;  left: calc(50% - 250px);  top:10%;  bottom: 10%;  background: #fff;  position: absolute;  }
+            .img-div>.img>img{  width:100%;  height:100%;  }
+            .img-div>.x{  cursor: pointer;  width: 50px;  height: 50px;  color: #fff;  font-size: 50px;  line-height: 40px;  right: 0;  position: absolute;  }
+        }
+        footer{background: #232323;color: #828282;}
+
+        @media (max-width:1200px) {
+            #engineers>li{left:0;width:100%; margin-bottom: 20px; }
+            #engineers>li>.engineer>img{ width:100%;}
+            #engineers>li>.engineer>.name{display: none;width: 97%;height: 100%;position: absolute;top: 0;background: rgba(0, 0, 0, 0.59);}
+            #engineers>li>.engineer>.name>h3{margin-top: 60%;color: #fff;font-size: 16px;font-weight: 400;}
+            #engineers>li>.engineer:hover .name{display: block;transition: 1.3s}
+            #engineers>li:nth-child(3n){margin-right:0;}
+            .cmmi3{width:100%;text-align:center; margin-bottom: 30px;border: 1px solid #ccc;}
+            .cmmi3>img{width:100%;}
+            .img-div{  position: fixed;  z-index: 9999999;  top: 0;  bottom: 0;  left: 0;  right: 0;  background: rgba(0, 0, 0, 0.41);  display: none;  }
+            .img-div>.img>img{  width:100%;  height:100%;  }
+            .img-div>.x{  cursor: pointer;  width: 50px;  height: 50px;  color: #fff;  font-size: 50px;  line-height: 40px;  right: 0;  position: absolute;  }
+            .img-div>.img{  width:100%;  height:calc(100% - 50px);
+                top:50px;  background: #fff;  position: absolute;  }
+        }
+    </style>
+
+</head>
+
+<body click='closeHideNav()'>
+<!--[if lte IE 8]>
+<style>body *{display:none;  }</style>
+<div id='ie8'>
+    <div><img src='img/ie8.jpg' style='margin:0 auto;'>您当前的浏览器版本太低</div>
+    <p>请<a title='点击这里升级浏览器！' href='http://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads?spm=875.7931836/A.a2226mw.1.HNpkXi'>升级浏览器</a>或者<a title='点击下载最新谷歌浏览器！' href='http://rj.baidu.com/soft/detail/14744.html?ald'>更换其他浏览器</a><br>继续进行浏览！</p>
+</div>
+<![endif]-->
+
+<header>
+    <a href='index.html' id='logo'>
+        <img src='img/logo.png'>
+        <img src='img/logo2.png' fff>
+    </a>
+    <a click='toggleNav()' class='ico-menu'></a>
+    <nav>
+        <a href='index.html'>首页</a>
+        <a href='index.html?scrollto=5'>成功案例</a>
+        <a href='joinUs.html'>人才招聘</a>
+        <a href='innovation.html'>创新技术</a>
+        <a href='qualification.html' class='on'>资质证书</a>
+        <a href='about.html'>关于我们</a>
+        <a open>
+            <b>旗下产品</b>
+            <span class='ico-ico-81'></span>
+            <ul hideNav>
+                <li href='http://skynetcredit.qixinyun.com/'>天网征信</li>
+                <li click='open404();def()'>天时产销</li>
+                <li click='open404();def()'>天道融资</li>
+                <li click='open404();def()'>天才培训</li>
+            </ul>
+        </a>
+    </nav>
+</header>
+
+<div id='body'>
+    <div id='banner'>
+        <img src="img/zzzs.png" alt="">
+    </div>
+    <div cont tac>
+        <div class="title">
+            <a href="#" class="on">
+                全部资质
+            </a>
+        </div>
+        <ul id='engineers' clear>
+            <li lg3 md4 sm6 xx12>
+                <div class='engineer'>
+                    <img class="img"  src="img/CMMI3.jpg" photo>
+                    <div class="name">
+                        <h3>天网征信CMMI 3级资质</h3>
+                    </div>
+                </div>
+            </li>
+            <li lg3 md4 sm6 xx12>
+                <div class='engineer'>
+                    <img class="img" src='img/tw-cpglv1.png' photo>
+                    <div class="name">
+                        <h3>天网征信产品管理系统V1</h3>
+                    </div>
+                </div>
+            </li>
+            <li lg3 md4 sm6 xx12>
+                <div class='engineer'>
+                    <img  class="img" src='img/tw-jsglv2.png' photo>
+                    <div class="name">
+                        <h3>天网征信用户角色管理系统V2</h3>
+                    </div>
+                </div>
+            </li>
+            <li lg3 md4 sm6 xx12>
+                <div class='engineer'>
+                    <img class="img" src='img/tw-qyglv2.png' photo>
+                    <div class="name">
+                        <h3>天网征信企业管理系统V2</h3>
+                    </div>
+                </div>
+            </li>
+            <li lg3 md4 sm6 xx12>
+                <div class='engineer'>
+                    <img class="img"  src='img/tw-qyrlv1.png' photo>
+                    <div class="name">
+                        <h3>天网征信企业认领系统V1</h3>
+                    </div>
+                </div>
+            </li>
+            <li lg3 md4 sm6 xx12>
+                <div class='engineer'>
+                    <img class="img" src='img/tw-qyssv1.png' photo>
+                    <div class="name">
+                        <h3>天网征信企业搜索系统V1</h3>
+                    </div>
+                </div>
+            </li>
+            <li lg3 md4 sm6 xx12>
+                <div class='engineer'>
+                    <img class="img"  src='img/tw-ywglv2.png' photo>
+                    <div class="name">
+                        <h3>天网征信业务管理系统V2</h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>© 2017 企信云 京ICP备11001652号-2</p>
+    <div cont clear>
+        <span fll cll>地址：北京市丰台区南四环西路总部基地188号-1区-8号楼三层</span>
+        <span flr clr xs12>http://www.qixinyun.com</span>
+
+        <span fll cll>电话：010-69299001</span>
+        <span flr clr xs12>电话：010-69299001</span>
+    </div>
+</footer>
+
+
+<!--<div id="lizi-bg"></div>-->
+<div class="img-div">
+    <div class="img">
+        <img src='img/tw-cpglv1.png' photo>
+    </div>
+    <div class="x">
+        x
+    </div>
+</div>
+
+<script src='http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js'></script>
+<script src='js/s.jquery.js'></script>
+<script src='js/layer/layer.js'></script>
+<script src='js/pub.js'></script>
+<script>
+
+    if(document.body.clientWidth<=760){
+
+    }
+    else{
+
+    }
+    (function(){
+      $('.x').on('click',function(){
+          $('.img-div').css({"display":"none"});
+//          $('body').css({"position":"relative"});
+      });
+      $('.engineer').on("click",function(){
+          var mm = $(this).children('.img').attr('src');
+          console.log(mm);
+          $('.img-div').css({"display":"block"});
+          $('.img-div img').attr('src',mm);
+//          $('body').css({"position":"fixed"});
+      })
+    }())
+
+
+</script>
+
+<!-- 粒子效果 -->
+<!--<script src='js/lizi-bg-init.js'></script>-->
+
+</body>
+</html>

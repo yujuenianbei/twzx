@@ -1,0 +1,315 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?cufgr8');
+  src:  url('fonts/icomoon.eot?cufgr8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cufgr8') format('truetype'),
+    url('fonts/icomoon.woff?cufgr8') format('woff'),
+    url('fonts/icomoon.svg?cufgr8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="OA-"], [class*=" OA-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.OA-leftarrow:before {
+  content: "\e95c";
+}
+.OA-lock:before {
+  content: "\e95d";
+}
+.OA-up:before {
+  content: "\e95e";
+}
+.OA-amplification:before {
+  content: "\e95f";
+}
+.OA-fire:before {
+  content: "\e960";
+}
+.OA-narrow:before {
+  content: "\e961";
+}
+.OA-enterprise:before {
+  content: "\e900";
+}
+.OA-executives:before {
+  content: "\e901";
+}
+.OA-trademark:before {
+  content: "\e902";
+}
+.OA-contact:before {
+  content: "\e903";
+}
+.OA-search:before {
+  content: "\e904";
+}
+.OA-firm:before {
+  content: "\e905";
+}
+.OA-bank:before {
+  content: "\e906";
+}
+.OA-attorney:before {
+  content: "\e907";
+}
+.OA-user:before {
+  content: "\e908";
+}
+.OA-shareholders:before {
+  content: "\e909";
+}
+.OA-tender:before {
+  content: "\e90a";
+}
+.OA-fund:before {
+  content: "\e90b";
+}
+.OA-training:before {
+  content: "\e90c";
+}
+.OA-app:before {
+  content: "\e90d";
+}
+.OA-ability:before {
+  content: "\e90e";
+}
+.OA-share:before {
+  content: "\e90f";
+}
+.OA-writing:before {
+  content: "\e910";
+}
+.OA-phone:before {
+  content: "\e911";
+}
+.OA-synopsis:before {
+  content: "\e912";
+}
+.OA-ranking:before {
+  content: "\e913";
+}
+.OA-debt:before {
+  content: "\e914";
+}
+.OA-information:before {
+  content: "\e915";
+}
+.OA-certification .path1:before {
+  content: "\e916";
+  color: rgb(39, 38, 54);
+}
+.OA-certification .path2:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.OA-number:before {
+  content: "\e918";
+}
+.OA-industry:before {
+  content: "\e919";
+}
+.OA-downstream:before {
+  content: "\e91a";
+}
+.OA-upstream:before {
+  content: "\e91b";
+}
+.OA-lixin:before {
+  content: "\1f353";
+}
+.OA-attention:before {
+  content: "\e91d";
+}
+.OA-shares:before {
+  content: "\e91e";
+}
+.OA-more:before {
+  content: "\e91f";
+}
+.OA-good:before {
+  content: "\e920";
+}
+.OA-inform:before {
+  content: "\e921";
+}
+.OA-all:before {
+  content: "\e922";
+}
+.OA-normal:before {
+  content: "\e923";
+}
+.OA-dangerous:before {
+  content: "\e924";
+}
+.OA-attestation:before {
+  content: "\e925";
+}
+.OA-Integrating:before {
+  content: "\e926";
+}
+.OA-credit:before {
+  content: "\e927";
+}
+.OA-marketing:before {
+  content: "\e928";
+}
+.OA-reply:before {
+  content: "\e929";
+}
+.OA-praise:before {
+  content: "\e92a";
+}
+.OA-qrcode:before {
+  content: "\e92b";
+}
+.OA-backtothetop:before {
+  content: "\e92c";
+}
+.OA-topup .path1:before {
+  content: "\e92d";
+  color: rgb(39, 38, 54);
+}
+.OA-topup .path2:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.OA-personalcenter:before {
+  content: "\e92f";
+}
+.OA-TheLeftPage:before {
+  content: "\e932";
+}
+.OA-selected:before {
+  content: "\e934";
+}
+.OA-TheRightPage:before {
+  content: "\e935";
+}
+.OA-calendar:before {
+  content: "\e936";
+}
+.OA-permissions:before {
+  content: "\e937";
+}
+.OA-All:before {
+  content: "\e938";
+}
+.OA-PersonaLoffice:before {
+  content: "\e939";
+}
+.OA-AfficheInfo:before {
+  content: "\e93a";
+}
+.OA-administrative:before {
+  content: "\e93b";
+}
+.OA-SetUpThe:before {
+  content: "\e93c";
+}
+.OA-mail:before {
+  content: "\e93d";
+}
+.OA-workflow:before {
+  content: "\e93e";
+}
+.OA-plan:before {
+  content: "\e93f";
+}
+.OA-communication:before {
+  content: "\e940";
+}
+.OA-file:before {
+  content: "\e941";
+}
+.OA-personnel:before {
+  content: "\e942";
+}
+.OA-news:before {
+  content: "\e943";
+}
+.OA-add:before {
+  content: "\e944";
+}
+.OA-NewMessage:before {
+  content: "\e945";
+}
+.OA-message:before {
+  content: "\e946";
+}
+.OA-close:before {
+  content: "\e947";
+}
+.OA-ToTheLeft:before {
+  content: "\e948";
+}
+.OA-ToTheRight:before {
+  content: "\e949";
+}
+.OA-review:before {
+  content: "\e94a";
+}
+.OA-write:before {
+  content: "\e94b";
+}
+.OA-notation:before {
+  content: "\e94c";
+}
+.OA-audit:before {
+  content: "\e94d";
+}
+.OA-MonthlyPlan:before {
+  content: "\e94e";
+}
+.OA-YearPlan:before {
+  content: "\e94f";
+}
+.OA-shut:before {
+  content: "\e950";
+}
+.OA-an:before {
+  content: "\e951";
+}
+.OA-TheirRanks:before {
+  content: "\e952";
+}
+.OA-authentication:before {
+  content: "\e953";
+}
+.OA-MediaQueries:before {
+  content: "\e954";
+}
+.OA-quality:before {
+  content: "\e955";
+}
+.OA-delete:before {
+  content: "\e956";
+}
+.OA-leaf:before {
+  content: "\e9a4";
+}
+.OA-switch:before {
+  content: "\e9b6";
+}
+.OA-upload3:before {
+  content: "\e9c8";
+}
+.OA-heart:before {
+  content: "\e9da";
+}
+

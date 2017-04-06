@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="tephone=no,email=no,date=no,address=no">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>企信云 - 加入我们</title>
+    <link rel='stylesheet' href='css/ico/style.css'>
+    <link rel='stylesheet' href='css/pub.css'>
+    <style>
+        #lizi-bg{background:#232426 url(image/joinus.jpg) center center/auto 100% no-repeat;  }
+
+        footer{background:#232323;  color:#838383;  }
+        footer>p{border-color:#666;  }
+        #body>div{margin:150px 40px 80px;  background:#FFFFFF;  }
+        @media (max-width:760px) {
+            #body>div{margin:30px 10px 20px;  }
+        }
+        
+        #zp{background:#EEEEEE;  padding:44px 55px;  color:#888888;  position:relative;  }
+        #zp>h2{font:700 50px/1 '';  padding-right:12px;  border-right:1px solid;  height:50px;  position:absolute;  top:0;  bottom:0;  left:55px;  margin:auto;  }
+        #zp>b{height:50px;  text-align:right;  padding-left:50px;  margin-left:18px;  border-left:1px solid;  position:absolute;  top:0;  bottom:0;  right:55px;  margin:auto;  }
+        #zp>b>span{font:700 18px/1 '';  display:block;  margin-bottom:3px;  }
+        #zp>b>a{font:14px/1 '';  color:#38C3C1;  }
+        #zp>b>a:hover{color:#D8271C;  }
+        #zp>[text]{margin:0 230px 0 131px;  padding:7px 0;  font:12px/18px '';  min-height:50px;  }
+        
+        @media (max-width:1024px) {
+            #zp{margin-bottom:50px;  padding:20px 30px;  }
+            #zp>h2{left:30px;  }
+            #zp>b{width:100%;  text-align:left;  top:100%;  left:0;  right:0;  bottom:initial;  border:none;  background:#fff;  padding:10px 30px;  }
+            #zp>b>span{display:inline;  }
+            #zp>[text]{margin-right:0;  }
+            #zp>b:before{content:'';  left:10px;  right:10px;  bottom:0;  position:absolute;  height:1px;  background:#eee;  }
+        }
+        @media (max-width:768px){
+            #zp>h2{display:block;  position:static;  font:700 36px/50px '';  text-align:center;  border:none;  }
+            #zp>[text]{margin-left:0;  }
+            #zp{padding:10px;  }
+            #zp>b{padding:10px;  }
+            #zp>b>span{font-size:14px;  }
+            #zp>b>a{font-size:12px;  }
+        }
+        
+        
+        #zw{position:relative;  }
+        #zw:before{content:'';  position:absolute;  width:1px;  top:10px;  bottom:10px;  background:#EEEEEE;  left:66.66666667%;  }
+        #zw-index{padding:30px;  position:relative;  }
+        #zw-cont{padding:30px 30px 30px 0;  position:relative;  color:#565656;  }
+        #zw-cont2{padding:30px;  position:relative;  color:#565656;  }
+        #zw-cont h4{margin-bottom:10px;  }
+        #zw-cont h4~h4{margin:10px 0;  }
+        #zw-cont div[type]{display:none;  }
+        #zw-cont div[type]:nth-of-type(1){display:block;  }
+        #zw-cont p{font:14px/2 '';  padding-left:1em;  position:relative;  }
+        #zw-cont p:before{content:'';  position:absolute;  top:0;  bottom:0;  left:0;  height:3px;  width:3px;  border-radius:3px;  background:#1BEAE7;  margin:auto;  }
+        #zw-cont2 b{color:#2CDCD9;  font:14px/1.5 '';  display:block;  margin-top:15px;  }
+        #zw-cont2 p{font:14px/1 '';  }
+        @media (max-width:1200px) {
+            #zw-index,
+            #zw-cont,
+            #zw-cont2{padding:20px;  }
+            #zw:before{display:none;  }
+            #zw-cont2:before{content:'';  position:absolute;  top:0;  left:10px;  right:10px;  height:1px;  background:#EEEEEE;  }
+        }
+        @media (max-width:768px) {
+            #zw-index,
+            #zw-cont,
+            #zw-cont2{padding:10px;  }
+            #zw-cont:before{content:'';  position:absolute;  top:0;  left:10px;  right:10px;  height:1px;  background:#EEEEEE;  }
+        }
+        
+        
+        
+        
+        .three{padding-left:2em;  font-size:14px;  color:#565656;  }
+        .three>li>span{display:block;  font:1em/1.5 '';  margin-left:-2em;  padding-left:2em;  position:relative;  }
+        .three>li>span:hover{color:#1BEAE7;  cursor:pointer;  }
+
+        .three-root{font-size:20px;  }
+        .three-root>li>span{font:700 1em/2 '';  }
+        .three-root>li>span:before{content:'+';  height:1em;  line-height:1;  position:absolute;  top:0;  bottom:0;  margin:auto;  left:1em;  color:#AEE7E6;  }
+        .three-root>li>.three{display:none;  }
+
+        .three-root>li.on>span:before{content:'-';  color:#1BEAE7;  }
+    </style>
+
+</head>
+
+<body click='closeHideNav()'>
+
+
+    <!--[if lte IE 8]>
+        <style>body *{display:none;  }</style>
+        <div id='ie8'>
+            <div><img src='img/ie8.jpg' style='margin:0 auto;'>您当前的浏览器版本太低</div>
+            <p>请<a title='点击这里升级浏览器！' href='http://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads?spm=875.7931836/A.a2226mw.1.HNpkXi'>升级浏览器</a>或者<a title='点击下载最新谷歌浏览器！' href='http://rj.baidu.com/soft/detail/14744.html?ald'>更换其他浏览器</a><br>继续进行浏览！</p>
+        </div>
+    <![endif]-->
+    <header class='fff'>
+        <a href='index.html' id='logo'>
+            <img src='img/logo.png'>
+            <img src='img/logo2.png' fff>
+        </a>
+        <a click='toggleNav()' class='ico-menu'></a>
+        <nav>
+            <a href='index.html'>首页</a>
+            <a href='index.html?scrollto=5'>成功案例</a>
+            <a href='joinUs.html' class='on'>人才招聘</a>
+            <a href='innovation.html'>创新技术</a>
+            <a href='qualification.html'>资质证书</a>
+            <a href='about.html'>关于我们</a>
+            <a open>
+                <b>旗下产品</b>
+                <span class='ico-ico-81'></span>
+                <ul hideNav>
+                    <li href='http://skynetcredit.qixinyun.com/'>天网征信</li>
+                    <li click='open404();def()'>天时产销</li>
+                    <li click='open404();def()'>天道融资</li>
+                    <li click='open404();def()'>天才培训</li>
+                </ul>
+            </a>
+        </nav>
+    </header>
+
+    <div id='body'>
+        <div>
+            <div id='zp'>
+                <h2>招聘</h2>
+                <div text>
+                    参与多项国家级数据平台项目设计与建设，具备丰富大数据平台开发设计和运营管理经验。内部管理强制通过ISO9001质量管理体系认证，有效确保软件平台实施的有效性、安全性。 多年以来，建设天网大数据征信平台（企业征信、产销对接、银企对接、信用人才）的过程中，打造了一支既有专业又有技术的研发团队30多人。
+                </div>
+                <b>
+                    <span>简历请投放至：</span>
+                    <a href='mailto:postmaster@qixinyun.com'>postmaster@qixinyun.com</a>
+                </b>
+            </div>
+
+
+            
+            <div id='zw' ovh>
+                <div id='zw-index' lg3 md4 xs12>
+                    <ul class='three three-root'>
+                        <li class='on'>
+                            <span click='toggleThreeType()'>技术部</span>
+                            <ul class='three' style='display:block;  '>
+                                <li><span click='showPost("前端工程师")'>前端工程师</span></li>
+                                <li><span click='showPost("PHP前端")'>PHP前端</span></li>
+                                <li><span click='showPost("PHP后端")'>PHP后端</span></li>
+                                <li><span click='showPost("产品经理")'>产品经理</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span click='toggleThreeType()'>业务部</span>
+                            <ul class='three'>
+                                <li>暂无</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span click='toggleThreeType()'>财务部</span>
+                            <ul class='three'>
+                                <li>暂无</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id='zw-cont' lg5 md8 xs12>
+                    <div type='前端工程师'>
+                        <h4>招聘职位</h4>
+                        <p>前端工程师</p>
+                        
+                        <h4>任职要求</h4>
+                        <p>熟悉基本的web前端技术,css,js,html</p>
+                        <p>熟悉JS面向对象编程方法</p>
+                        <p>熟悉至少一种前端框架</p>
+                        <p>注重代码规范,能够编写可维护性,可拓展性良好的代码</p>
+                        <p>了解单元测试</p>
+                        <!-- 
+                        <h4>工作地址</h4>
+                        <p>西安碑林区长安路恒佳尊者汇B座805</p> -->
+                    </div>
+                    
+                    <div type='PHP前端'>
+                        <h4>招聘职位</h4>
+                        <p>PHP前端</p>
+                        
+                        <h4>任职要求</h4>
+                        <p>负责调用接口开发前端服务层代码</p>
+                        <p>熟悉面向对象开发</p>
+                        <p>至少熟悉任意一种框架</p>
+                        <p>了解常用缓存技术</p>
+                        
+                        <h4>职位要求</h4>
+                        <p>php开发经验 1-3年</p>
+                        <!-- 
+                        <h4>工作地址</h4>
+                        <p>西安碑林区长安路恒佳尊者汇B座805</p> -->
+                    </div>
+
+                    <div type='PHP后端'>
+                        <h4>招聘职位</h4>
+                        <p>PHP后端</p>
+                        
+                        <h4>任职要求</h4>
+                        <p>负责后端服务层代码开发</p>
+                        <p>负责后端服务层的测试代码开发工作</p>
+                        <p>熟悉面向对象开发,了解DDD更佳</p>
+                        <p>至少熟悉任意一种框架</p>
+                        <p>了解常用缓存技术</p>
+                        <p>熟悉HTTP协议</p>
+                        
+                        <h4>职位要求</h4>
+                        <p>了解RESTFUL</p>
+                        <p>了解devops</p>
+                        <p>熟悉单元测试(必须)</p>
+                        <p>php开发经验 3-5年</p>
+                        <p>无障碍阅读英文文档</p>
+                        <!-- 
+                        <h4>工作地址</h4>
+                        <p>西安碑林区长安路恒佳尊者汇B座805</p> -->
+                    </div>
+                    
+                    <div type='产品经理'>
+                        <h4>招聘职位</h4>
+                        <p>产品经理</p>
+                        
+                        <h4>任职要求</h4>
+                        <p>计算机相关专业，本科以上学历，3年及以上产品经理/管理工作经验； </p>
+                        <p>具有较强的业务分析能力和页面设计能力，熟悉产品开发全部流程； </p>
+                        <p>具备宽广的视野和创新意识，对行业的有理解或有较强的独立思考能力； </p>
+                        <p>具备产品线整体规划和把控能力，善于沟通陈述产品设计理念； </p>
+                        <p>优秀的协调能力、团队合作精神、保密意识； </p>
+                        <p>热爱互联网产品，具备高度责任心。</p>
+                        <!-- 
+                        <h4>工作地址</h4>
+                        <p>西安碑林区长安路恒佳尊者汇B座805</p> -->
+                    </div>
+                    
+                </div>
+                <div id='zw-cont2' lg4 md12 xs12>
+                    <h4>我们可以给你提供</h4>
+                    <b>好平台</b>
+                    <p></p>
+                    <b>大空间</b>
+                    <p></p>
+                    <b>团队奖金</b>
+                    <p></p>
+                    <b>个人奖金</b>
+                    <p></p>
+                    <b>年终奖</b>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2017 企信云 京ICP备11001652号-2</p>
+        <div cont clear>
+            <span fll cll>地址：北京市丰台区南四环西路总部基地188号-1区-8号楼三层</span>
+            <span flr clr xs12>http://www.qixinyun.com</span>
+            
+            <span fll cll>电话：010-69299001</span>
+            <span flr clr xs12>电话：010-69299001</span>
+        </div>
+    </footer>
+
+    <div id="lizi-bg"></div>
+
+    <script src='http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js'></script>
+    <script src='js/s.jquery.js'></script>
+    <script src='js/layer/layer.js'></script>
+    <script src='js/pub.js'></script>
+    <script>
+        
+        
+        // 树状图状态切换
+        eve.toggleThreeType=function (){
+
+            var the=$(this);
+
+            var on=the.dom('<').hasClass('on');
+            if(!on){
+                the.dom('<<>').removeClass('on').find('>.three').stop(true).hide(200);
+            }
+
+            the.dom('+').stop(true)[on?'hide':'show'](200).dom('<')[on?'removeClass':'addClass']('on');
+        }
+
+        // 显示职位
+        eve.showPost=function (e,type){
+            $('#zw-cont div[type]').hide();
+            $('#zw-cont div[type="'+type+'"]').show();
+        }
+
+
+        if(document.body.clientWidth<=760){
+
+        }
+        else{
+            
+        }
+
+
+    </script>
+
+</body>
