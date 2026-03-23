@@ -1,1 +1,9 @@
-.DS_Store
+# Shell script backup/swap files
+*.sh.swp
+*.sh.swo
+
+# Temporary files
+*.tmp
+
+# Logs
+*.log
