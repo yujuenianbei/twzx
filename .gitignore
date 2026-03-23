@@ -1,1 +1,1 @@
-.DS_Store
+Nothing needs to be added to .gitignore since only a Python source file (`calculate.py`) was added, which is a regular source code file that should be tracked in version control. No build artifacts, dependencies, or temporary files were included in the changes.
