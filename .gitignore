@@ -1,1 +1,1 @@
-.DS_Store
+Nothing should be ignored since only a Python source file (`calculate.py`) was added without any build artifacts, dependencies, or temporary files.
