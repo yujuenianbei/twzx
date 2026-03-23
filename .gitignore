@@ -1,1 +1,1 @@
-.DS_Store
+Nothing should be ignored since the changes only include source code files (.js and .py) without any build artifacts, dependencies, or temporary files.
