@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# 计算 555 + 222
+# 计算 6 + 8454222
 
-result = 555 + 222
-print(f"555 + 222 = {result}")
+result = 6 + 8454222
+print(f"6 + 8454222 = {result}")
