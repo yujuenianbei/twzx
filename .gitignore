@@ -1,48 +1,21 @@
 ```python
-# Python
-__pycache__/
+# Compiled and build artifacts
 *.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
+__pycache__/
+
+# Dependencies
 .venv/
-.ENV
-.python-version
-.pytest_cache/
-.mypy_cache/
-
-# Logs
-*.log
-
-# Environment variables
+venv/
 .env
 .env.local
-*.env*
+*.env.*
 
-# IDE
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-*.tmp
-
-# Build artifacts
-dist/
-build/
-*.egg-info/
-.coverage
-coverage/
-htmlcov/
-
-# OS
-.DS_Store
-Thumbs.db
-```
-
-Wait, let me reconsider. The only modified file is `script.py` which is a source code file, and there are no build artifacts, dependencies, or temp files in the changes. According to rule 6, if the change list contains only source files and no build artifacts, dependencies, or temp files, I should output an empty .gitignore.
-
-```python
-
 ```
